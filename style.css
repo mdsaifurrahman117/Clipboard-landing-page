@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+}
+:root {
+            --Strong-Cyan: hsl(171, 66%, 44%);
+            --Light-Blue: hsl(233, 100%, 69%);
+            --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+            --Grayish-Blue: hsl(201, 11%, 66%);
+            --Text-color : #fff;
+}
+body {
+            font-family: 'Bai Jamjuree', sans-serif;
+}
+h1, h2, h3 {
+            font-weight: 600;
+            color: var(--Dark-Grayish-Blue);
+}
+h4, h5, h6 {
+            font-weight: 400;
+            color: var(--Dark-Grayish-Blue);
+}
+ul li {
+            list-style: none;
+            font-weight: 400;
+}
+p {
+            font-weight: 400;
+            color: var(--Grayish-Blue);
+}
+a {
+            text-decoration: none;
+            font-weight: 400;
+}
+button {
+            border: none;
+            background: none;
+            font-weight: 600;
+            color: var(--Text-color);
+            padding: 15px 20px;
+            border-radius: 30px;
+            box-shadow: 0px 2px 2px 0px var(--Grayish-Blue);
+            cursor: pointer;
+}
+main {
+            background: url(images/bg-header-mobile.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 100px 0px;
+}
+.logo {
+            padding: 50px 0px;
+}
+.logo img {
+            max-width: 100%;
+}
+.hero-title h1 {
+            color: var(--Dark-Grayish-Blue);
+            max-width: 269px;
+            margin: auto;
+}
+.hero-desc p {
+            color: var(--Grayish-Blue);
+}
+.hero-btn :first-child {
+            background: var(--Strong-Cyan);
+            margin-bottom: 20px;
+}
+.hero-btn :last-child {
+            background: var(--Light-Blue);
+}
+#about {
+            margin-bottom: 50px;
+}
+.about-image {
+            max-width: 300px;
+}
+.about-desc-title {
+            max-width: 300px;
+}
+.about-image img {
+            width: 100%;
+}
+.about-desc-tiitle {
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 50px;
+}
+.about-image-text {
+            max-width: 300px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+}
+.about-image {
+            margin-bottom: 50px;
+}
+.about-text {
+            text-align: center;
+}
+.about-text .text {
+            margin-bottom: 30px;
+}
+#place {
+            margin-bottom: 50px;
+}
+.place-title-text {
+            text-align: center;
+}
+.place-image {
+            max-width: 300px;
+            margin: auto;
+}
+.place-image img {
+            width: 100%;
+}
+.workflow {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            margin: auto;
+            margin-top: 50px;
+}
+.work-box {
+            text-align: center;
+}
+.work-box-icon {
+            margin: 20px;
+}
+.partners-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            max-width: 165px;
+            margin: auto;
+}
+.partners-box {
+            max-width: 100px;
+            margin: auto;
+}
+.partners-box img {
+            width: 100%;
+}
+.bottom-main-title-desc {
+            max-width: 307px;
+            margin: auto;
+            text-align: center;
+}
+footer {
+            background: #e7e7e7;
+            padding: 50px 0px 30px 0px;
+}
+.footer-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+}
+.footer-logo {
+            max-width: 60px;
+}
+.footer-logo img {
+            width: 100%;
+}
+.footer-manu ul {
+            padding-left: 0;
+            display: grid;
+            grid-template-rows: repeat(5, 30px);
+            gap: 20px;
+            text-align: center;
+}
+.social ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-left: 0;
+            margin-bottom: 0;
+            line-height: 30px;
+}
+.cradit {
+            padding-top: 30px;
+            max-width: 224px;
+            text-align: center;
+            margin: auto;
+}
+
+@media (min-width: 425px) {
+            main {
+                        background: url(images/bg-header-desktop.png);
+                        background-repeat: no-repeat;
+            }
+            .hero-title h1 {
+                        max-width: 580px;
+            }
+            .hero-desc p {
+                        max-width: 537px;
+                        margin: auto;
+                        padding: 15px 0px 50px 0px;
+            }
+            .hero-btn :first-child {
+                        margin-right: 10px;
+            }
+            .about-desc-tiitle {
+                        max-width: 600px;
+            }
+            .about-image-text {
+                        max-width: 100%;
+                        flex-direction: row;
+                        gap: 50px;
+                        justify-content: center;
+            }
+            .about-image {
+                        max-width: 500px;
+            }
+            .about-text {
+                       max-width: 500px;
+                       text-align: start;
+            }
+            .about-text .text h1 {
+                        font-size: 20px;
+            }
+            .about-text .text p {
+                        max-width: 350px;
+            }
+            .place-title-text {
+                        margin-bottom: 50px;
+            }
+            .place-title-text p {
+                        max-width: 600px;
+                        margin: auto;
+            }
+            .place-image {
+                        max-width: 750px;
+            }
+            .workflow {
+                        flex-direction: row;
+                        max-width: 100%;
+            }
+            .work-box {
+                        max-width: 350px;
+            }
+            .work-box h1 {
+                        font-size: 20px;
+            }
+            .partners-wrapper {
+                        flex-direction: row;
+                        max-width: 845px;
+            }
+            .bottom-main-title-desc {
+                        max-width: 600px;
+            }
+            .footer-wrapper {
+                        flex-direction: row;
+                        justify-content: center;
+            }
+            .footer-manu {
+                        max-width: 585px;
+            }
+            .footer-manu ul {
+                        grid-template-columns: 100px 100px 104px 100px 100px;
+                        grid-template-rows: 0;
+            }
+            .social ul {
+                        flex-direction: row;
+            }
+            .cradit {
+                        max-width: 450px;
+            }
+}
